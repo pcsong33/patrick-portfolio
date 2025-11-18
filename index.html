@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89623822-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-89623822-2');
+  </script>
+  <title>Patrick Song</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event){
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+  <script> 
+  $(function(){
+    $("#publicationsContent").load("publications/publications.html");
+    $("#workshopContent").load("publications/workshop.html");
+  });
+  </script>
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+    .top-spacing {
+      padding-top: 25px;
+    }
+    .section-name {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    a {
+      color: #0088DD;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #Header {
+      margin-bottom: 100px;
+    }
+    #Headshot {
+      width: 100%;
+    }
+    #Title {
+      max-width: 800px;
+    }
+    #Description {
+      max-width: 800px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="Header">
+
+    <div class="row top-spacing mx-auto" id="Title">
+        <div class="col-sm-4">
+            <img src="images/profile_pic.png" class="" id="Headshot">
+        </div>
+        <div class="col-sm-8 d-flex align-items-center">
+            <div>
+                <h1 class="">Patrick Song</h1>
+                <p>
+                    Software Engineer
+                    <br>
+                    <a href="https://www.patreon.com">Patreon</a>
+                </p>
+                <p>psong [at] alumni.harvard.edu</p>
+                <p>
+                    <a href="cv.pdf">cv</a> |
+                    <a href="https://www.linkedin.com/in/patrick-song-87352a1a5/">linkedin</a> |
+                    <a href="https://scholar.google.com/citations?user=SCUBe4wAAAAJ&hl=en">google scholar</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row top-spacing">
+      <div class="mx-auto" id="Description">
+        <p>
+            I'm currently a software engineer at <a href="https://www.patreon.com">Patreon</a>. 
+            Previously, I was a member of the <a href="https://privacytools.seas.harvard.edu/">Harvard Privacy Tools Project</a> 
+            research group, co-advised by
+            <a href="https://salil.seas.harvard.edu/">Salil Vadhan</a> and
+            <a href="https://jayshreesarathy.net/">Jayshree Sarathy</a>. 
+            I also contributed to open-source differential privacy library development as an <a href="https://opendp.org">OpenDP</a> student intern.
+            <br>
+            <br>
+            At former stops, I interned at <a href="https://www.microsoft.com">Microsoft</a>, 
+            as well as at <a href="https://www.intheon.com">Intheon</a> and <a href="https://www.runelabs.com">Rune Labs</a>, two neurotech startups.
+            I spent a wonderful 4 years at <a href="https://seas.harvard.edu/">Harvard University</a>, where I completed my undergraduate and masters degrees in Computer Science.
+            <br>
+            <br>
+            Outside of work, you can find me running, attending film festivals, and meditating.
+        </p>
+
+
+        
+  
+
+        <h2 class="section-name">Publications and preprints</h2>
+        <hr>
+
+        <div id="publicationsContent"></div>
+
+        <h2 style="margin-top: 50px; margin-bottom: 20px">Teaching</h2>
+        <hr>
+        <div class="row mx-auto">
+            <p><b>Fall 2022, 2023:</b> Teaching Fellow for  <a href="https://harvard-cs-1200.github.io/cs1200/">CS1200: Intro to Algorithms and their Limitations</a> at Harvard University</p>
+            <p><b>Spring 2022, 2023:</b> Teaching Fellow for  <a href="https://mikesmith.scholars.harvard.edu/class/cs-32-computational-thinking-and-problem-solving">CS32: Computational Thinking and Problem Solving</a> at Harvard University</p>
+            <p><b>Winter 2021, 2022:</b> Teaching Fellow for <a href="https://www.hks.harvard.edu/courses/programming-and-data-policymakers">DPI-691M: Programming and Data for Policymakers</a> at Harvard Kennedy School</p>
+            <p><b>Fall 2021:</b> Teaching Fellow for <a href="https://cs50.harvard.edu/x/2021/">CS 50: Introduction to Computer Science</a> at Harvard University</p>
+        </div>
+
+        <h2 style="margin-top: 50px; margin-bottom: 20px">Education</h2>
+        <hr>
+
+        <div class="row mx-auto">
+            <p><b><span style="font-size: 1.25em;">Harvard University</span> (2019-2023)</b><br>
+
+            <em>S.M. in Computer Science</em><br>
+            <em>A.B. in Computer Science: Magna Cum Laude, Highest Honors in Department</em></p>
+
+            <p><b>Selected Graduate Coursework:</b>
+              CS208: Introduction to Differential Privacy,
+              CS229r: Information Theory for CS,
+              CS238: Optimized Democracy,
+              CS262: Introduction to Distributed Computing,
+              CS279r: Research Topics in Human-Computer Interaction.
+
+            <p><b>Extracurriculars:</b> Harvard Meditation Club, Harvard Running Club, Harvard Open Data Project</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
